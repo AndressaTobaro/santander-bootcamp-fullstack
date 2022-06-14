@@ -1,6 +1,8 @@
 # **Santander Bootcamp Fullstack**
 Repositório do Santander Bootcamp Fullstack, anotações e trajetória.
 
+Por [Andressa Tobaro](https://www.linkedin.com/in/andressa-tobaro-130383231)
+
 ## Links Úteis
 - [Dicas Para Concluir Seu Bootcamp Com Sucesso](https://web.dio.me/articles/5-dicas-para-concluir-seu-bootcamp?page=1&order=oldest)
 - [Launch Time 05 Santander](https://www.youtube.com/watch?v=wIqkpWmqnWk)
