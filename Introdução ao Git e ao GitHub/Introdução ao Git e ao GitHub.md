@@ -23,6 +23,7 @@
  - echo arquivo > arquivo.txt (criando um novo arquivo escrito arquivo)
  - git clone http:... (clonando o arquivo do gitHub)
  - git push origin main (atualizando o documento original no gitHub com os arquivos modificados na máquina)
+ - git pull origin main (baixando para máquina o diretório modificado no gitHub)
 
 ## Links Úteis
  - [Dowload Git](https://git-scm.com/downloads)
