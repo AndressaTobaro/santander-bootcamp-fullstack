@@ -1,0 +1,26 @@
+*{}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(https://us.123rf.com/450wm/kannaa123rf/kannaa123rf1605/kannaa123rf160500018/56661813-abstract-math-number-background-vector-illustration-for-business-design-black-white-colors-random-si.jpg);
+    background-color: #000000;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 200px;
+}
+
+h2{
+    text-align: center;
+}
+
+.container{
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+}
