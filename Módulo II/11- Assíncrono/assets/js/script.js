@@ -1,43 +1,54 @@
-// const BASE_URL = 'https://api.thecatapi.com/v1/images/search';
-// const catBtn = document.getElementById('change-cat');
+const BASE_URL = 'https://api.thecatapi.com/v1/images/search';
+const catBtn = document.getElementById('change-cat');
 
-// const getCats = async () => {
-//    const data = await fetch(BASE_URL)
-//       .then((res) => res.json())
-//       .catch((e) => console.log(e))
-
-//    return data.webpurl;
-// };
-
-//  const loadImg = async () => {
-//    const catImg = document.getElementById('cat');
-//    catImg.src = await getCats();
-// } 
-
-
-// catBtn.addEventListener('click', loadImg);
-
-// loadImg();
-
-
-let change_cat = document.querySelector('.change_cat');
-change_cat.addEventListener("click", fetchPics);
-
-function fetchPics() {
+const getCats = async () => {
    let catsImgDiv = document.querySelector(".catsImgDiv")
    catsImgDiv.innerHTML = ''
-
-   fetch('https://api.thecatapi.com/v1/images/search')
-      .then(response => response.json()) 
+   const data = await fetch(BASE_URL)
+      .then(res => res.json())
       .then((data) => {
          let catsImgUrl = data[0].url
 
          let catsImgEl = document.createElement("img")
          catsImgEl.setAttribute('src', `${catsImgUrl}`)
-         
+   
          let catsImgDiv = document.querySelector(".catsImgDiv")
          catsImgDiv.appendChild(catsImgEl)
-      })
+})
 
-      .catch(e => console.log(e))
-};
+.catch(e => console.log(e))
+
+}
+
+ const loadImg = async () => {
+   const catImg = document.getElementById('cat');
+   catImg.src = await getCats();
+} 
+
+
+button.addEventListener('click', loadImg);
+
+loadImg();
+
+
+// let change_cat = document.querySelector('.change_cat');
+// change_cat.addEventListener("click", fetchPics);
+
+// function fetchPics() {
+//    let catsImgDiv = document.querySelector(".catsImgDiv")
+//    catsImgDiv.innerHTML = ''
+
+//    fetch('https://api.thecatapi.com/v1/images/search')
+//       .then(response => response.json()) 
+//       .then((data) => {
+//          let catsImgUrl = data[0].url
+
+//          let catsImgEl = document.createElement("img")
+//          catsImgEl.setAttribute('src', `${catsImgUrl}`)
+         
+//          let catsImgDiv = document.querySelector(".catsImgDiv")
+//          catsImgDiv.appendChild(catsImgEl)
+//       })
+
+//       .catch(e => console.log(e))
+// };
